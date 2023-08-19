@@ -19,4 +19,18 @@ function addToCart(item, price) {
     `;
 
     cartItems.appendChild(p);
+
+    setTotalPrice(price);
+}
+
+function setTotalPrice(newItemPrice) {
+    const pricesContainer = document.querySelector('#prices-container');
+
+    const totalPriceElement = pricesContainer.childNodes[1].childNodes[1]
+    const totalPriceString = totalPriceElement.innerText.split('TK')[0];
+    const previousTotalPrice = parseFloat(totalPriceString);
+
+    const newTotalPrice = previousTotalPrice + newItemPrice;
+
+    totalPriceElement.innerText = newTotalPrice.toFixed(2) + 'TK';
 }

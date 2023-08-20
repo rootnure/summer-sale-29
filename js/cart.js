@@ -32,7 +32,7 @@ function setTotalPrice(newItemPrice) {
 
     const newTotalPrice = previousTotalPrice + newItemPrice;
 
-    totalPriceElement.innerText = `${newTotalPrice.toFixed(2)} TK`;
+    totalPriceElement.innerText = `${newTotalPrice.toFixed(2)}TK`;
 
     const makePurchaseBtn = pricesContainer.parentNode.childNodes[9];
     makePurchaseBtn.removeAttribute('disabled');

@@ -257,7 +257,7 @@
                      class="btn btn-primary bg-new-primary hover:bg-pink-500 border-none text-white absolute top-0 right-0 rounded-l-none normal-case"
                      disabled>Apply</button>
                   <p id="coupon-success-msg" class="hidden text-center mt-2 font-semibold text-xs text-green-500">
-                     *CONGRATULATION!!! 20% discount added</p>
+                     *CONGRATULATION!!! 20% discount applied</p>
                   <p id="coupon-failure-msg" class="hidden text-center mt-2 font-semibold text-xs text-red-400">*Coupon
                      code is not valid</p>
                   <p id="coupon-already-applied-msg"
@@ -277,7 +277,7 @@
                   <p class="text-xl">Total: <span id="final-total" class="text-gray-400">0.00TK</span></p>
                </div>
                <hr>
-               <button onclick="my_modal_1.showModal()"
+               <button onclick="my_modal_1.showModal()" id="make-purchase-btn"
                   class="btn btn-primary w-full mt-4 bg-new-primary hover:bg-pink-500 border-none text-white text-lg rounded-lg normal-case"
                   disabled>Make Purchase</button>
                <!-- modal -->
